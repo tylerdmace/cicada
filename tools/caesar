@@ -1,0 +1,11 @@
+#!/usr/bin/env newlisp
+
+(constant 'cyphertext "lxxt>33m2mqkyv2gsq3q=w]O2ntk")
+(constant 'shift-offset -4)
+(set 'decoded '())
+
+(dostring (c cyphertext) (push (char (- c 4)) decoded -1))
+
+(println (join decoded))
+
+(exit)
